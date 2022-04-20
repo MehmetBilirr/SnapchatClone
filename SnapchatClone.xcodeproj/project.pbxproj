@@ -17,6 +17,7 @@
 		F0CC90592810995100218D3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0CC90582810995100218D3C /* GoogleService-Info.plist */; };
 		F0CC905B2810A81200218D3C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CC905A2810A81200218D3C /* SettingsVC.swift */; };
 		F0D8BEC82810AB7600C5B125 /* Singleton.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8BEC72810AB7600C5B125 /* Singleton.swift.swift */; };
+		F0D8BECA2810AD3200C5B125 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8BEC92810AD3200C5B125 /* UploadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F0CC90582810995100218D3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F0CC905A2810A81200218D3C /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		F0D8BEC72810AB7600C5B125 /* Singleton.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift.swift; sourceTree = "<group>"; };
+		F0D8BEC92810AD3200C5B125 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				F0CC905A2810A81200218D3C /* SettingsVC.swift */,
 				F0CC90482810990200218D3C /* HomeVC.swift */,
+				F0D8BEC92810AD3200C5B125 /* UploadVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CC90492810990200218D3C /* HomeVC.swift in Sources */,
+				F0D8BECA2810AD3200C5B125 /* UploadVC.swift in Sources */,
 				F0CC905B2810A81200218D3C /* SettingsVC.swift in Sources */,
 				F0CC90452810990200218D3C /* AppDelegate.swift in Sources */,
 				F0D8BEC82810AB7600C5B125 /* Singleton.swift.swift in Sources */,
