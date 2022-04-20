@@ -10,11 +10,13 @@
 		48CE4478F9E29BF85CA9ACA7 /* Pods_SnapchatClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7AE1FA7FD31E6F66281815B /* Pods_SnapchatClone.framework */; };
 		F0CC90452810990200218D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CC90442810990200218D3C /* AppDelegate.swift */; };
 		F0CC90472810990200218D3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CC90462810990200218D3C /* SceneDelegate.swift */; };
-		F0CC90492810990200218D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CC90482810990200218D3C /* ViewController.swift */; };
+		F0CC90492810990200218D3C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CC90482810990200218D3C /* HomeVC.swift */; };
 		F0CC904C2810990200218D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CC904A2810990200218D3C /* Main.storyboard */; };
 		F0CC904E2810990400218D3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CC904D2810990400218D3C /* Assets.xcassets */; };
 		F0CC90512810990400218D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CC904F2810990400218D3C /* LaunchScreen.storyboard */; };
 		F0CC90592810995100218D3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0CC90582810995100218D3C /* GoogleService-Info.plist */; };
+		F0CC905B2810A81200218D3C /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CC905A2810A81200218D3C /* SettingsVC.swift */; };
+		F0D8BEC82810AB7600C5B125 /* Singleton.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D8BEC72810AB7600C5B125 /* Singleton.swift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +26,14 @@
 		F0CC90412810990200218D3C /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CC90442810990200218D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0CC90462810990200218D3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0CC90482810990200218D3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0CC90482810990200218D3C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F0CC904B2810990200218D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0CC904D2810990400218D3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0CC90502810990400218D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0CC90522810990400218D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CC90582810995100218D3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0CC905A2810A81200218D3C /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		F0D8BEC72810AB7600C5B125 /* Singleton.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,6 @@
 				073D74CB0C1724BD25610F63 /* Pods-SnapchatClone.debug.xcconfig */,
 				3F078D090CA0EF795F8D0101 /* Pods-SnapchatClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,9 +86,9 @@
 		F0CC90432810990200218D3C /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
-				F0CC90442810990200218D3C /* AppDelegate.swift */,
-				F0CC90462810990200218D3C /* SceneDelegate.swift */,
-				F0CC90482810990200218D3C /* ViewController.swift */,
+				F0D8BEC62810AB6700C5B125 /* Models */,
+				F0D8BEC52810AB3700C5B125 /* ViewControllers */,
+				F0D8BEC42810AB2900C5B125 /* Delegates */,
 				F0CC904A2810990200218D3C /* Main.storyboard */,
 				F0CC904D2810990400218D3C /* Assets.xcassets */,
 				F0CC904F2810990400218D3C /* LaunchScreen.storyboard */,
@@ -93,6 +96,32 @@
 				F0CC90582810995100218D3C /* GoogleService-Info.plist */,
 			);
 			path = SnapchatClone;
+			sourceTree = "<group>";
+		};
+		F0D8BEC42810AB2900C5B125 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F0CC90442810990200218D3C /* AppDelegate.swift */,
+				F0CC90462810990200218D3C /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F0D8BEC52810AB3700C5B125 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F0CC905A2810A81200218D3C /* SettingsVC.swift */,
+				F0CC90482810990200218D3C /* HomeVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F0D8BEC62810AB6700C5B125 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F0D8BEC72810AB7600C5B125 /* Singleton.swift.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0CC90492810990200218D3C /* ViewController.swift in Sources */,
+				F0CC90492810990200218D3C /* HomeVC.swift in Sources */,
+				F0CC905B2810A81200218D3C /* SettingsVC.swift in Sources */,
 				F0CC90452810990200218D3C /* AppDelegate.swift in Sources */,
+				F0D8BEC82810AB7600C5B125 /* Singleton.swift.swift in Sources */,
 				F0CC90472810990200218D3C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
