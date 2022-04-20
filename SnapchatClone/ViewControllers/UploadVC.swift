@@ -20,7 +20,7 @@ class UploadVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         imageView.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(chooseImage))
         imageView.addGestureRecognizer(gestureRecognizer)
-        getUser()
+        
     }
     
     
@@ -39,28 +39,7 @@ class UploadVC: UIViewController,UIImagePickerControllerDelegate,UINavigationCon
         self.dismiss(animated: true)
     }
     
-    func getUser(){
-        
-        
-        self.firestoreDB.collection("Users").whereField("email", isEqualTo: auth.currentUser?.email).getDocuments { snaphsot, error in
-            if error != nil {
-                self.makeAlert(title: "Error", message: error?.localizedDescription ?? "Error")
-            }else {
-                if snaphsot?.isEmpty == false && snaphsot != nil {
-                    
-                    for document in snaphsot!.documents {
-                        
-                        if let username = document.get("username") as? String {
-                            Singleton.shared.email = (self.auth.currentUser?.email)!
-                            Singleton.shared.username = username
-                            
-                        }
-                    }
-                }
-            }
-        }
-        
-    }
+    
     
     @IBAction func uploadButtonClicked(_ sender: Any) {
         
