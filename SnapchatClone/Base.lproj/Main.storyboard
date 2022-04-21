@@ -211,21 +211,33 @@
             </objects>
             <point key="canvasLocation" x="1521.7391304347827" y="-324.10714285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--SnapVC-->
         <scene sceneID="p4h-nq-B4E">
             <objects>
-                <viewController id="8rK-3E-dz8" sceneMemberID="viewController">
+                <viewController id="8rK-3E-dz8" customClass="SnapVC" customModule="SnapchatClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XSN-zo-AkI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzK-wS-los">
+                                <rect key="frame" x="20" y="44" width="374" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TGA-xc-owc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kn8-Li-Awl"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="JzK-wS-los" id="HNf-at-qOX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obb-zl-mbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2362" y="-334"/>
+            <point key="canvasLocation" x="2360.8695652173915" y="-334.15178571428572"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="FKg-S7-iIc">

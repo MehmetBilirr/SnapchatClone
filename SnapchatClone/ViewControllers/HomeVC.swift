@@ -107,6 +107,16 @@ class HomeVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
              alert.addAction(okButton)
              self.present(alert, animated: true, completion: nil)
          }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSnapVC" {
+            let destinationVC = segue.destination as! SnapVC
+            destinationVC.chosenSnap = chosenSnap
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        chosenSnap = snapArray[indexPath.row]
+        performSegue(withIdentifier: "toSnapVC", sender: nil)
+    }
 
    
 
